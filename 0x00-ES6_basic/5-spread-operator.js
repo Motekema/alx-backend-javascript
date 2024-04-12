@@ -1,3 +1,5 @@
-import concatArrays from './5-spread-operator.js';
+const concatArrays = (array1, array2, string) => {
+  return [...array1, ...array2, ...string];
+};
 
-console.log(concatArrays(['a', 'b'], ['c', 'd'], 'Hello')); 
+export default concatArrays;
