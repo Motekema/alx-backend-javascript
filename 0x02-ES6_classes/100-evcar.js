@@ -1,5 +1,5 @@
 // 100-evcar.js
-import Car from './10-car.js';
+import Car from './10-car';
 
 class EVCar extends Car {
   constructor(brand, motor, color, range) {
@@ -17,3 +17,4 @@ class EVCar extends Car {
 }
 
 export default EVCar;
+
