@@ -1,7 +1,14 @@
-export default function iterateThroughObject(object) {
-  for (const key in object) {
-    if (Object.hasOwnProperty.call(object, key)) {
-      console.log(`${key}: ${object[key]}`);
-    }
+export default function createReportObject(employeesList) {
+  const allEmployees = {};
+
+  for (const [departmentName, employees] of Object.entries(employeesList)) {
+    allEmployees[departmentName] = [...employees];
   }
+
+  return {
+    allEmployees,
+    getNumberOfDepartments() {
+      return Object.keys(employeesList).length;
+    },
+  };
 }
