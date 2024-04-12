@@ -1,9 +1,7 @@
-export default function iterateThroughObject(reportWithIterator) {
-  let result = '';
-  for (const employee of reportWithIterator) {
-    result += employee + ' | ';
+export default function iterateThroughObject(object) {
+  for (const key in object) {
+    if (Object.hasOwnProperty.call(object, key)) {
+      console.log(`${key}: ${object[key]}`);
+    }
   }
-  // Remove the last pipe character and space
-  result = result.slice(0, -3);
-  return result;
 }
