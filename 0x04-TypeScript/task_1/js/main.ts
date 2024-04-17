@@ -1,5 +1,3 @@
-// main.ts
-
 // Define the Teacher interface
 interface Teacher {
   firstName: string;
@@ -8,6 +6,11 @@ interface Teacher {
   yearsOfExperience?: number;
   location: string;
   [key: string]: any; // Allow any other attribute
+}
+
+// Define the Directors interface extending the Teacher interface
+interface Directors extends Teacher {
+  numberOfReports: number;
 }
 
 // Create instances of the Teacher interface
@@ -35,7 +38,17 @@ const teacher3: Teacher = {
   contract: true, // Custom attribute
 };
 
+// Create an instance of the Directors interface
+const director1: Directors = {
+  firstName: 'John',
+  lastName: 'Doe',
+  fullTimeEmployee: true,
+  location: 'London',
+  numberOfReports: 17,
+};
+
 // Log the instances to the console
 console.log(teacher1);
 console.log(teacher2);
 console.log(teacher3);
+console.log(director1); // Log the director instance
