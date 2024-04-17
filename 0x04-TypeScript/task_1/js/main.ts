@@ -13,6 +13,18 @@ interface Directors extends Teacher {
   numberOfReports: number;
 }
 
+// Define an interface for the printTeacher function
+interface PrintTeacherFunction {
+  (firstName: string, lastName: string): string;
+}
+
+// Define the printTeacher function
+const printTeacher: PrintTeacherFunction = (firstName, lastName) => {
+  const firstInitial = firstName.charAt(0).toUpperCase(); // Get the first letter of the first name and convert it to uppercase
+  const fullName = `${firstInitial}. ${lastName}`; // Combine the first initial and the full last name
+  return fullName;
+};
+
 // Create instances of the Teacher interface
 const teacher1: Teacher = {
   firstName: 'John',
@@ -47,8 +59,10 @@ const director1: Directors = {
   numberOfReports: 17,
 };
 
-// Log the instances to the console
-console.log(teacher1);
-console.log(teacher2);
-console.log(teacher3);
-console.log(director1); // Log the director instance
+// Log the results of printTeacher function for the provided teachers
+console.log(printTeacher(teacher1.firstName, teacher1.lastName));
+console.log(printTeacher(teacher2.firstName, teacher2.lastName));
+console.log(printTeacher(teacher3.firstName, teacher3.lastName));
+
+// Log the result of printTeacher function for the director
+console.log(printTeacher(director1.firstName, director1.lastName));
