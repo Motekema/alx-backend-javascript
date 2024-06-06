@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A simple API for learning basic integration testing in NodeJS.",
   "main": "api.js",
-  "author": "Bezaleel Olakunori <bezaleeloci@gmail.com>",
+  "author": "Motekema Mahlanya <motekema@gmail.com>",
   "private": true,
   "license": "MIT",
   "scripts": {
@@ -20,12 +20,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/B3zaleel/alx-backend-javascript"
+    "url": "https://github.com/Motekema/alx-backend-javascript"
   },
   "bugs": {
-    "url": "https://github.com/B3zaleel/alx-backend-javascript/issues"
+    "url": "https://github.com/Motekema/alx-backend-javascript/issues"
   },
-  "homepage": "https://github.com/B3zaleel/alx-backend-javascript/tree/main/0x06-unittests_in_js/10-api",
+  "homepage": "https://github.com/Motekema/alx-backend-javascript/tree/main/0x06-unittests_in_js/10-api",
   "engines": {
     "node": "16.x",
     "npm": "8.x",
