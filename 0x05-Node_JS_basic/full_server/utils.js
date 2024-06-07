@@ -3,9 +3,9 @@ import fs from 'fs';
 /**
  * Reads the data of students in a CSV data file.
  * @param {String} dataPath The path to the CSV data file.
- * @author Bezaleel Olakunori <https://github.com/B3zaleel>
+ * @author Motekema Mahlanya <https://github.com/Motekema>
  * @returns {Promise<{
- *   String: {firstname: String, lastname: String, age: number}[]
+ *   String: {firstname: String, last name: String, age: number}[]
  * }>}
  */
 const readDatabase = (dataPath) => new Promise((resolve, reject) => {
