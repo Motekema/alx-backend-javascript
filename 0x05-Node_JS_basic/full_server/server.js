@@ -1,8 +1,8 @@
 import express from 'express';
 import mapRoutes from './routes';
 
-const PORT = 1245;
 const app = express();
+const PORT = 1245;
 
 mapRoutes(app);
 app.listen(PORT, () => {
